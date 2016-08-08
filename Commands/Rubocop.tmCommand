@@ -10,10 +10,9 @@
 if [ -z "$TM_RUBY" ]; then
     echo "Need to set TM_RUBY"
     exit 1
-fi  
+fi
 
 cd "$TM_PROJECT_DIRECTORY"
-[ -z "$TM_RUBOCOP_RUBY_VERSION" ] && export TM_RUBOCOP_RUBY_VERSION=2.2
 "$TM_RUBY" "$TM_BUNDLE_SUPPORT/rubocop.rb"
 </string>
 	<key>input</key>
